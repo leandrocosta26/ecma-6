@@ -20,4 +20,13 @@ class Negociacao {
   get volume() {
     return this._valor * this._quantidade;
   }
+
+  get tr() {
+    return `<tr>
+              <td>${this.data}</td>
+              <td>${this.quantidade}</td>
+              <td>${this.valor}</td>
+              <td>${this.volume}</td>
+            </tr>`
+  }
 }
